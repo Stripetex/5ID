@@ -4,35 +4,35 @@ import java.io.*;
 import java.net.*;
 import java.util.StringTokenizer;
 
-public class Echo {
+public class Server {
     public static void main(String args[]) {
         
         ServerSocket echoServer = null;
-        String line;
-        BufferedReader is;
-        PrintStream os;
+        String s;
+        BufferedReader input;
+        PrintStream output;
 		int port = 9999;
         Socket clientSocket = null;
-		StringTokenizer parole;
+		StringTokenizer words;
 		String keyword = "<gameover>";
 		
         try {
             echoServer = new ServerSocket(port);
-            System.out.println("Il server sta ascoltando sulla porta" +);
+            System.out.println("Il server sta ascoltando sulla porta " + port);
 			clientSocket = echoServer.accept();
 			input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream())); //comunicazione in entrata dal socket client
 			output = new PrintStream(clientSocket.getOutputStream()); //comunicazione in uscita verso il socket client
 			while(true){
-				s = is.readLine();
+				s = input.readLine();
 				Thread.sleep(200);
-				words = new StringTokenizer(line);
+				words = new StringTokenizer(s);
 				
 				if(words.countTokens() == 3){ //se rileva tre parole inserita, invia messaggio di chiusura a client
-					os.println(keyword);
+					output.println(keyword);
 					echoServer.close();
 					break;
 				}
-				os.println("ECHO" + line);
+				output.println("ECHO " + s);
 			}
         } catch (IOException e) {
             System.out.println(e);

@@ -5,8 +5,8 @@ public class Client {
     public static void main(String[] args) throws IOException {
 		
         Socket client = null;
-        PrintWriter out = null;
-        BufferedReader in = null;
+        PrintWriter output = null;
+        BufferedReader input = null;
 		String keyword = "<gameover>";
         
         String address = "localhost";
@@ -24,7 +24,7 @@ public class Client {
 	    BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
 	    String userInput;
 	
-	    System.out.println("Il client sta comunicando sulla porta" + port);
+	    System.out.println("Il client sta comunicando sulla porta " + port);
 	    while (true) {
 	        System.out.print("> ");
 			userInput = stdIn.readLine();
@@ -33,7 +33,7 @@ public class Client {
 			//determina la chiusura del socket in caso la parola inserita corrisponda con la keyword determinata
 			if(serversAnswer.equals(keyword)){
 				client.close();
-				System.out.println("Non altri motivi per sopravvivere, addio mondo");
+				System.out.println("Non ho altri motivi per sopravvivere, addio mondo");
 				break;
 			}
 			
