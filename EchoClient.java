@@ -15,7 +15,7 @@ import java.net.*;
 public class EchoClient{
     public static void main(String[] args) throws IOException {
 		
-		// usare nc -l 8888 per ascoltare, sarà il nostro server
+	
 
         Socket Client = null;
         PrintWriter out = null;
