@@ -11,10 +11,15 @@ public class EchoClient {
     public static void main(String[] args) throws IOException {
         String serverAddress = "127.0.0.1"; // server string
         String userInput = "prova";
-        Socket s = new Socket(serverAddress, 9999);
         BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         PrintWriter out = new PrintWriter(s.getOutputStream(), true);
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
+		
+		try{			
+        Socket s = new Socket(serverAddress, 9999);
+		} catch(IOException ioe) {
+			os.println("Server non trovato, riprovare")
+		}
 
 
         /*for (int i = 0; i < 3; i++) {
