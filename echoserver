@@ -1,0 +1,72 @@
+package echoserver;
+
+/**
+ * @author Kevin gemolo
+ */
+import java.io.*;
+import java.net.*;
+import java.lang.Thread;
+import java.util.StringTokenizer;
+/**
+ * @author Kevin gemolo
+ */
+
+import java.io.*;
+import java.net.*;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+public class EchoServer {
+
+    public static void main(String args[]) {
+        ArrayList password = new ArrayList();
+        password.add("ciao");
+        password.add("come");
+        password.add("stai");
+        ServerSocket echoServer = null;
+        String line;
+        BufferedReader is;
+        PrintStream os;
+        int port = 9999;
+        StringTokenizer parole;
+        Socket clientSocket = null;
+        ArrayList temp = new ArrayList();
+        temp = (ArrayList) password.clone();
+        boolean bol = false;
+
+        try {
+            echoServer = new ServerSocket(port);
+            System.out.println("Server in ascolto");
+            clientSocket = echoServer.accept();
+            is = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            os = new PrintStream(clientSocket.getOutputStream());
+            while (true) {
+
+                line = is.readLine();
+
+                
+                    Thread.sleep(100);
+                    if (temp.contains(line)) {
+                        temp.remove(temp.indexOf(line));
+                        bol=true;
+                    } else {
+                        temp = (ArrayList) password.clone();//Utilizzo o il .clone() o 3 .add(ciao)
+                        bol = false;
+                    }
+
+                    if (temp.size() == 0) {  //condizione
+                        os.println("<QUIT>");
+
+                        echoServer.close();
+                        break;
+                    }
+                
+                os.println("ECHO " + line);
+            }
+        } catch (IOException e) {
+            System.out.println(e);
+        } catch (InterruptedException ie) {
+            System.out.println(ie);
+        }
+    }
+}
