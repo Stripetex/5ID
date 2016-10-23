@@ -29,11 +29,15 @@ public class Echo {
                 
                 Thread.sleep(100);
                 
-                if (line.equals("Ciao ciao ciao")){  // Se sono 3 invio al client l'ordine di chiudersi
-                    os.println("{-[CloseConnectionMessage]-}");
-					System.out.println("Server> FINE TRASMISSIONE!");
-                    echoServer.close();
-                    break;
+                if (line.equals("ciao")){  	// Se viene ripetuta tre volte la parola "ciao" viene chiusa la connessione
+					closeConnection++;
+					System.out.println("Server> [PAROLA SEGRETA]");
+					if(closeConnection==3){
+						os.println("{-[CloseConnectionMessage]-}");
+						System.out.println("Server> FINE TRASMISSIONE!");
+						echoServer.close();
+						break;
+					}
                 }
                 
                 // Invio il messaggio al client
