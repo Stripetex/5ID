@@ -22,6 +22,8 @@ public class Echo {
             is = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));  //legge cosa invia il client
             os = new PrintStream(clientSocket.getOutputStream());                           //invia al client
             
+            int closeConnection=0;	//Conteggio messaggio di uscita e chiusura
+            
             while (true) {
 				// Ottengo la linea di testo inserita e la stampo a schermo
                 line = is.readLine();
