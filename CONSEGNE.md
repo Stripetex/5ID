@@ -16,6 +16,10 @@ README.md
 ```
 con la descrizione informale del progetto.
 - Il tutto va messo in una cartella Robot.
-- Non consegnare altro file.
+- Non consegnare file .class o xml di progetto NetBeans. In caso lavorare con il file
+```
+.gitignore
+```
+in locale.
 - Qunato sopra è richiesto per raggiungere una valutazione di sufficienza abbondante. Ogni elemento ulteriore, ad iniziativa dello studente, sarà preso in considerazioni per le valutazioni eccellenti in sede di collquio orale.  
 
