@@ -21,5 +21,5 @@ con la descrizione informale del progetto.
 .gitignore
 ```
 in locale.
-- Qunato sopra è richiesto per raggiungere una valutazione di sufficienza abbondante. Ogni elemento ulteriore, ad iniziativa dello studente, sarà preso in considerazioni per le valutazioni eccellenti in sede di collquio orale.  
+- Quanto sopra è richiesto per raggiungere una valutazione di sufficienza abbondante. Ogni elemento ulteriore, ad iniziativa dello studente, sarà preso in considerazioni per le valutazioni eccellenti in sede di collquio orale.  
 
