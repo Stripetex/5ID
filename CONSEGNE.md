@@ -1,4 +1,4 @@
-# Robot: deadline 15 novembre
+# Robot: deadline 18 novembre
 
 Ecco quanto richiesto. 
 - Si scrivano i sorgenti per le seguenti classi.
