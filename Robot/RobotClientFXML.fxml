@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXPopup?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXRippler?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition?>
+<?import de.jensd.fx.fontawesome.Icon?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="robotclient.RobotClientFXMLController">
+    <children>
+        <GridPane prefHeight="65.0" prefWidth="300.0" style="-fx-background-color: #5264ae;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="62.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="19.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="168.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="51.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <JFXHamburger id="arrow" fx:id="arrow" prefHeight="40.0" prefWidth="48.0" scaleX="0.75" scaleY="0.75" scaleZ="0.75">
+
+                    <HamburgerBackArrowBasicTransition />     <!-- Per usare Scene builder commentare anche questa riga -->
+                </JFXHamburger>
+                <Label id="Gekolo" fx:id="Gekolo" prefHeight="17.0" prefWidth="66.0" styleClass="gekolo" text="Gekolo" textFill="WHITE" GridPane.columnIndex="2" />
+                <JFXToolbar prefWidth="66.0" GridPane.columnIndex="3">
+                    <center>
+                        <JFXRippler fx:id="optionsRippler" maskType="CIRCLE" style="-fx-ripple-color: WHITE" BorderPane.alignment="CENTER">
+
+                                <StackPane fx:id="optionsBurger" prefHeight="65.0" prefWidth="97.0">
+
+                                        <JFXHamburger fx:id="HamOpt" prefHeight="64.0" prefWidth="47.0" styleClass="jfx-options-burger" />
+
+                                </StackPane>
+
+                        </JFXRippler>
+                    </center>
+                </JFXToolbar>
+
+
+
+
+
+
+            </children>
+        </GridPane>
+        <JFXPopup fx:id="toolbarPopup" styleClass="tool-bar-popup">
+            <JFXListView styleClass="option-list-view">
+                <Label fx:id="save">
+                    Save
+                    <graphic>
+                        <Icon awesomeIcon="USER" size="1.5em" style=";" styleClass="option-jfx-list-view-icon" />
+                    </graphic>
+                </Label>
+              <Label fx:id="exit">
+				Exit
+				<graphic>
+					<Icon awesomeIcon="REPLY" size="1.5em" style=";" styleClass="option-jfx-list-view-icon" />
+				</graphic>
+			</Label>
+            </JFXListView>
+        </JFXPopup>
+      <GridPane layoutY="555.0" prefHeight="45.0" prefWidth="367.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.0" minWidth="10.0" prefWidth="49.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.0" minWidth="10.0" prefWidth="258.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.0" minWidth="10.0" prefWidth="61.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <JFXTextField fx:id="txt" minWidth="170.0" prefHeight="32.0" prefWidth="295.0" promptText="Type Something" GridPane.columnIndex="1" />
+            <JFXRadioButton fx:id="radio" onMousePressed="#RadioPressed" prefHeight="17.0" prefWidth="40.0" text=" " GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="8.0" />
+               </GridPane.margin></JFXRadioButton>
+         </children>
+      </GridPane>
+      <ScrollPane fx:id="scroll" hbarPolicy="NEVER" layoutX="7.0" layoutY="100.0" prefHeight="440.0" prefWidth="350.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+         <content>
+  
+     
+                  <VBox fx:id="vbox" prefHeight="436.0" prefWidth="346.0" />
+              
+         </content>
+      </ScrollPane>
+    </children>
+
+
+
+
+
+    <stylesheets>
+        <URL value="@jfoenix-components.css" />
+        <URL value="@jfoenix-main-demo.css" />
+        <URL value="@Style.css" />
+    </stylesheets>
+</AnchorPane>

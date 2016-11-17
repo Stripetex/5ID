@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="robotclient.ConnessioneFXMLController">
+   <children>
+      <JFXButton layoutX="140.0" layoutY="298.0" onAction="#change" prefHeight="60.0" prefWidth="320.0" text="Connettiti" />
+      <JFXTextField text="9999" fx:id="port" layoutX="226.0" layoutY="78.0" promptText="Porta di connessione" />
+      <JFXTextField text="127.0.0.1" fx:id="hostname" layoutX="226.0" layoutY="146.0" promptText="Hostname" />
+   </children>
+</AnchorPane>

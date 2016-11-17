@@ -1,0 +1,33 @@
+.gekolo{
+    -fx-font-family: "Arial";
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+.mioMessaggio{
+    -fx-font-family: "Arial";
+    -fx-font-size: 17;
+    -fx-padding: 6px 7px 8px 9px;
+
+
+}
+
+
+.mioDrawer{
+    -fx-background-color:  #5264ae;
+    -fx-border-radius: 50px;
+   // -fx-background-radius: 300px 0px 300px 300px;
+   -fx-background-radius: 50px 0px 50px 50px;
+}
+
+.ServerDrawer{
+	-fx-max-width:500px;
+    -fx-background-color:  gray;
+    -fx-border-radius: 50px;
+   // -fx-background-radius: 0px 40px 40px 20px;
+	-fx-background-radius: 0px 50px 50px 50px;
+}
+
+.vuoto{
+	-fx-background-color:  white;
+
+}
