@@ -1,0 +1,39 @@
+/*
+    @author Nico
+ */
+
+@font-face {
+    src: url("font/Roboto-Light.ttf");
+}
+
+@font-face {
+    src: url("font/Roboto-Regular.ttf");
+}
+
+
+@font-face {
+    src: url("font/Roboto-Medium.ttf");
+}
+
+* {
+    -fx-font-smoothing-type: gray;
+}
+
+JFXTextField, JFXButton, JFXTextArea {
+    -fx-font-family: "Roboto Regular";
+    -fx-font-size: 16px;
+}
+
+.titleApp {
+    -fx-font-family: "Roboto Light";
+    -fx-font-size: 52.5px;
+}
+
+.subTitleApp {
+    -fx-font-family: "Roboto Regular";
+    -fx-font-size: 15.5px;
+}
+
+JFXButton {
+    -fx-font-family: "Roboto Medium";
+}

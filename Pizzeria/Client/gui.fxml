@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="538.0" style="-fx-background-color: white;" stylesheets="@materialDesignText.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="client.guiController">
+   <children>
+      <JFXTextField fx:id="userText" focusColor="#004d40" labelFloat="true" layoutX="15.0" layoutY="407.0" maxWidth="424.0" minWidth="382.0" onKeyPressed="#onEnter" prefHeight="34.0" prefWidth="424.0" promptText="Scrivi un messaggio" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="97.0">
+         <font>
+            <Font name="Roboto Light" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSend" graphicTextGap="2.0" layoutX="444.0" layoutY="410.0" onAction="#send" prefHeight="34.0" prefWidth="81.0" ripplerFill="WHITE" style="-fx-background-color: #004D40;" text="INVIA" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <JFXTextArea fx:id="chatText" cacheShape="false" centerShape="false" editable="false" focusColor="WHITE" focusTraversable="false" layoutX="14.0" layoutY="99.0" maxWidth="508.0" minWidth="508.0" prefHeight="289.0" prefWidth="508.0" scaleShape="false" unFocusColor="WHITE" wrapText="true" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="99.0" />
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="178.0" prefHeight="60.0" prefWidth="183.0" styleClass="titleApp" text="Pizzeria" textAlignment="CENTER" textFill="#e53935" textOverrun="CLIP" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="60.0" prefHeight="19.0" prefWidth="174.0" styleClass="subTitleApp" text="Risponditore Automatico" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
+   </children>
+</AnchorPane>
