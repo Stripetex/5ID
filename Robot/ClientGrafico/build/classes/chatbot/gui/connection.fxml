@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatbot.gui.ConnectionController">
+   <children>
+      <JFXTextField fx:id="name" focusColor="WHITE" layoutX="178.0" layoutY="259.0" promptText="Nome" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" AnchorPane.bottomAnchor="310.0" />
+      <JFXTextField fx:id="serverDoor" focusColor="WHITE" layoutX="178.0" layoutY="358.0" promptText="Porta" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
+      <JFXButton layoutX="178.0" layoutY="406.0" onAction="#connect" text="CONNETTI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="serverIp" focusColor="WHITE" layoutX="178.0" layoutY="309.0" promptText="IP Server" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
+      <Label layoutX="122.0" layoutY="275.0" text="Nome" />
+      <Label layoutX="124.0" layoutY="316.0" text="IP Server" />
+      <Label layoutX="124.0" layoutY="365.0" text="Porta" />
+   </children>
+</AnchorPane>
