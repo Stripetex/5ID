@@ -7,7 +7,7 @@ Il protocollo si basa infatti su il linguaggio AIML (Artificial Intelligence Mod
 
   - Guida utilizzata: [Guida AIML]
 
-Questo linguaggio si basa sul concetto di pattern e template, cioè per ogni domanda(pattern) si ricava la risposta indicata nel file in precdenza(template).
+Questo linguaggio nasce sul concetto di pattern e template, cioè per ogni domanda(pattern) si ricava la risposta indicata nel file in precdenza(template).
 
 # AIML TAG
 I TAG AIML sono pochi ma possono essere sfruttati per creare molteplici logiche e combinazioni. Vedere il link sopra per la spiegazione. L'unico omesso è stato il TAG 
