@@ -10,6 +10,14 @@
 
 
 }
+#gp{
+    -fx-background-color: #5264ae;
+}
+#foto{
+    -fx-background-image: url("file:H:/RobotClient/src/robotclient/gekolo.jpeg");
+    -fx-background-size: 70;
+    -fx-background-radius: 50px 50px 50px 50px;
+}
 
 
 .mioDrawer{
@@ -30,4 +38,18 @@
 .vuoto{
 	-fx-background-color:  white;
 
+}
+
+
+
+
+
+
+
+#anc{
+    -fx-background-color:  #8996a0;
+}
+
+.schiuma{
+    -fx-fill:  white;
 }
