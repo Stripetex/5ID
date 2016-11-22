@@ -4,5 +4,7 @@ Robot con server che permette a più utenti di parlare contemporaneamente con "G
 
 Ho utilizzato delle librerie trovate su internet: <br>
 Jfoenix per la grafica: https://github.com/jfoenixadmin/JFoenix <br>
-FontAwesome per delle icone https://bitbucket.org/Jerady/fontawesomefx/src
+FontAwesome per delle icone https://bitbucket.org/Jerady/fontawesomefx/src<br>
+
+Ho inoltre preso spunto da Nicola Bove per il metodo "inizioNome" nella classe Protocol.java
 
