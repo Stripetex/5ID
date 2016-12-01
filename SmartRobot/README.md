@@ -10,7 +10,7 @@ Inoltre è stata realizzata la classe
 ```
 CSVReader.java
 ```
-per permettere la lettura del fil csv descritto in seguito.
+per permettere la lettura del file csv descritto in seguito.
 
 Alfred, il vostro assistente personale, per il momento è un ottimo suggeritore di film
 Una volta inserito il genere desiderato, Alfred provvederà a fornirvi un film casuale del genere richiesto attingendo ad un database (IMDb) di ben 40000 film. Il database è rappresentato da un file csv quale:
