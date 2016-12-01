@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="638.0" prefWidth="431.0" styleClass="AnchorStyle" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.FXMLDocumentController">
+    <children>
+      
+      <TextArea fx:id="textChat" editable="false" layoutX="14.0" layoutY="80.0" opacity="0.51" prefHeight="542.0" prefWidth="403.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font></TextArea>
+      <TextField fx:id="message" layoutX="14.0" layoutY="622.0" prefHeight="21.0" prefWidth="403.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Text layoutX="120.0" layoutY="39.8984375" strokeType="OUTSIDE" strokeWidth="0.0" text="Parla Con FedeNargi" wrappingWidth="293.13671875" AnchorPane.bottomAnchor="602.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="14.0" layoutY="6.0" prefHeight="70.0" prefWidth="70.0" styleClass="circle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="6.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fedeCerchio.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
