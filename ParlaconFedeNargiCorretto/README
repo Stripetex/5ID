@@ -1,0 +1,12 @@
+Protocol del server: 
+  Creato con vari if e contains in modo da dare margine più ampio al Cliente nel scrivere le frasi o le domande
+  Compresa la memoria per quanto riguarda il nome del Cliente e la ripetizione di alcune domande
+  Gestito tutto tramite stati del protocol come mostrato nel diagramma UML
+  
+Client:
+  Collegato fin da subito all'indirizzo e porta Server in modo da non permettere un fallimento nel collegamento da parte dell'utente
+  Viene aperto solo unicamente se il server è avviato
+ 
+Server:
+  Simile al KnockKnockServer, registra ongi cliente stampando a console il momento di connessione e disconnessione 
+  
