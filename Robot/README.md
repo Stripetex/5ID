@@ -5,20 +5,21 @@ Il progetto è suddiviso in Client e Server:<br>
 
 #Client
 Ho utilizzato i seguenti file per la creazione del client<br>
--RobotClient.java<br>
--RobotClientFXML.fxml<br>
--RobotClientFXMLController.java<br>
--Communication.java<br>
--ConnessioneFXML.fxml<br>
--ConnessioneFXMLController.java<br>
+
+- RobotClient.java<br>
+- RobotClientFXML.fxml<br>
+- RobotClientFXMLController.java<br>
+- Communication.java<br>
+- ConnessioneFXML.fxml<br>
+- ConnessioneFXMLController.java<br>
 <br>
 #Server
 
 Ho utlizzato i seguenti file per la creazione del Server<br>
 
--Protocol.java<br>
--Risp.java<br>
--RobotServer.java<br>
+- Protocol.java<br>
+- Risp.java<br>
+- RobotServer.java<br>
 
 
 
