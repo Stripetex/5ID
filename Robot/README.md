@@ -1,8 +1,7 @@
 #Gekolo il barman
+Gekolo il barban è un applicazione che permette di parlare con un intelligenza artificiale.<br>
 
-Robot con server che permette a più utenti di parlare contemporaneamente con "Gekolo" il barman ubriacone.
-
-
+Il progetto è suddiviso in Client e Server:<br>
 
 #Client
 Ho utilizzato i seguenti file per la creazione del client<br>
@@ -20,6 +19,9 @@ Ho utlizzato i seguenti file per la creazione del Server<br>
 -Protocol.java<br>
 -Risp.java<br>
 -RobotServer.java<br>
+
+
+
 
 Ho utilizzato delle librerie trovate su internet: <br>
 Jfoenix per la grafica: https://github.com/jfoenixadmin/JFoenix <br>
