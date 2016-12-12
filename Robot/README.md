@@ -5,21 +5,21 @@ Robot con server che permette a più utenti di parlare contemporaneamente con "G
 
 
 #Client
-Ho utilizzato i seguenti file per la creazione del client
--RobotClient.java
--RobotClientFXML.fxml
--RobotClientFXMLController.java
--Communication.java
--ConnessioneFXML.fxml
--ConnessioneFXMLController.java
-
+Ho utilizzato i seguenti file per la creazione del client<br>
+-RobotClient.java<br>
+-RobotClientFXML.fxml<br>
+-RobotClientFXMLController.java<br>
+-Communication.java<br>
+-ConnessioneFXML.fxml<br>
+-ConnessioneFXMLController.java<br>
+<br>
 #Server
 
-Ho utlizzato i seguenti file per la creazione del Server
+Ho utlizzato i seguenti file per la creazione del Server<br>
 
--Protocol.java
--Risp.java
--RobotServer.java
+-Protocol.java<br>
+-Risp.java<br>
+-RobotServer.java<br>
 
 Ho utilizzato delle librerie trovate su internet: <br>
 Jfoenix per la grafica: https://github.com/jfoenixadmin/JFoenix <br>
