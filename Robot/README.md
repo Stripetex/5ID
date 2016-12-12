@@ -12,8 +12,8 @@ Ho utilizzato i seguenti file per la creazione del client<br>
 - Communication.java<br>
 - ConnessioneFXML.fxml<br>
 - ConnessioneFXMLController.java<br>
-<br>
-#Server
+
+#Server<br>
 
 Ho utlizzato i seguenti file per la creazione del Server<br>
 
