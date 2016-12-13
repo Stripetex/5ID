@@ -1,4 +1,4 @@
 # CHATUDP TREDESINI
 
-Programma che sfrutta il protocollo UDP per creare una "sala" in cui poter conversare.
+Client che si collega ad un server UDP creando una chat di grupp.
 Grafica in javafx
