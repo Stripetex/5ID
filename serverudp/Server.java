@@ -28,13 +28,12 @@ public class Server {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws SocketException, IOException, Exception {        
-        /*if(args.length!=1){
+        if(args.length!=1){
             System.out.println("Use java server <port_number>");
             System.exit(1);
-        }*/
+        }
         client = new ArrayList<Client>();
-        //server = new DatagramSocket(Integer.parseInt(args[0]));
-        server = new DatagramSocket(4444);
+        server = new DatagramSocket(Integer.parseInt(args[0]));
         System.out.println("server avviato");
         while(true){
             byte[] data = new byte[100];
