@@ -4,4 +4,4 @@ Server che crea la "sala" per poter iniziare la chat di gruppo.
 
 Programma in linea di comando.
 
-cmd: java Server <porta>
+cmd: java Server "porta"
