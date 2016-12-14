@@ -1,4 +1,4 @@
-# CHAT WITH MEREDITH
+# CHATTA WITH MEREDITH
 
 Questo bot è stato ideato per chattare in modo più o meno semplice di argomenti generici scelti precedentemente dall'utente.
 
