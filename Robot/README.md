@@ -48,7 +48,8 @@ Il jar usato è nella directory
 
 Link al sito: [JFoenix]
 
-Scanferla Giovanni 20\11\2016 -- il ritardo è causato da dei miei problemi non anc'ora risolti ma va bene così
+Scanferla Giovanni 20\11\2016 -- il ritardo è causato da dei miei problemi non ancora risolti<br>
+Perchè spiego jesolo si tu è marghera no
 
    [Guida AIML]: <https://www.tutorialspoint.com/aiml/>
    [JFoenix]: <http://jfoenix.com/>
