@@ -1,4 +1,4 @@
-# CHATBOT TREDESINI
+# CHATBOT L'almanacco di Trede
 
 Questo "ChatBot" elaborato dal progetto knock knock ha la funzione di almanacco momentaneamente per il calcio.
 Possono essere richiesti i risultati di una giornata o un singolo risultato di un campionato.
