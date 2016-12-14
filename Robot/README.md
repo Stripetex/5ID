@@ -26,7 +26,7 @@ E sono:
 - ServerConsoleController.java: gestisce la grafica della console del Server;
 - ServerConsole.fxml
 
-# CLIENT
+# CLIENTI
 I file del client sono nella directory
 >\src\robot\network\client
 E sono:
@@ -47,9 +47,11 @@ Il jar usato è nella directory
 >\lib\jfoenix.jar
 
 Link al sito: [JFoenix]
+Tutto grazie a [Pozzo]
 
 Scanferla Giovanni 20\11\2016 -- il ritardo è causato da dei miei problemi non ancora risolti<br>
 Perchè spiego jesolo si tu è marghera no, i problemi erano riguardanti la 01
 
    [Guida AIML]: <https://www.tutorialspoint.com/aiml/>
    [JFoenix]: <http://jfoenix.com/>
+   [Pozzo]: <http://pozzoweb.altervista.org/chisono.php>
