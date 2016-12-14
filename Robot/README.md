@@ -1,21 +1,21 @@
-# CHATTA WITH MEREDITH
+# CHAT WITH MEREDITH
 
-Questo bot Ã¨ stato ideato per chattare in modo piÃ¹ o meno semplice di argomenti generici scelti precedentemente dall'utente.
+Questo bot è stato ideato per chattare in modo più o meno semplice di argomenti generici scelti precedentemente dall'utente.
 
-Lo scopo del progetto Ã¨ stato quello di creare un protocollo che fosse accessibile da tutti gli utenti, anche i meno esperti.
+Lo scopo del progetto è stato quello di creare un protocollo che fosse accessibile da tutti gli utenti, anche i meno esperti.
 Il protocollo si basa infatti su il linguaggio AIML (Artificial Intelligence Modelling Language) basato su XML.
 
   - Guida utilizzata: [Guida AIML]
 
-Questo linguaggio nasce sul concetto di pattern e template, cioÃ¨ per ogni domanda(pattern) si ricava la risposta indicata nel file in precdenza(template).
+Questo linguaggio nasce sul concetto di pattern e template, cioè per ogni domanda(pattern) si ricava la risposta indicata nel file in precdenza(template).
 
 # AIML TAG
-I TAG AIML sono pochi ma possono essere sfruttati per creare molteplici logiche e combinazioni. Vedere il link sopra per la spiegazione. L'unico omesso Ã¨ stato il TAG 
+I TAG AIML sono pochi ma possono essere sfruttati per creare molteplici logiche e combinazioni. Vedere il link sopra per la spiegazione. L'unico omesso è stato il TAG 
 ```sh
 <topic>
 ```
 # GRAFICA
-La grafica Ã¨ stata fatta in modo da integrare sia Client che Server sullo stesso progetto. Si basa quindi su una schermata principale che ci permette sia di creare un Server, che di connetterci con un Client ad un indirizzo locale o esterno.
+La grafica è stata fatta in modo da integrare sia Client che Server sullo stesso progetto. Si basa quindi su una schermata principale che ci permette sia di creare un Server, che di connetterci con un Client ad un indirizzo locale o esterno.
 
 # SERVER
 I file del server sono nella directory
@@ -26,7 +26,7 @@ E sono:
 - ServerConsoleController.java: gestisce la grafica della console del Server;
 - ServerConsole.fxml
 
-# CLIENTI
+# CLIENT
 I file del client sono nella directory
 >\src\robot\network\client
 E sono:
@@ -43,15 +43,12 @@ N.B. IL JAR DEVE ESSERE NELLA STESSA DIRECTORY CON LA CARTELLA LIB E LA CARTELLA
 
 # LIBRERIA USATA
 Per simulare il Material Design su JavaFX ho utilizzato la libreria JFoenix
-Il jar usato Ã¨ nella directory
+Il jar usato è nella directory
 >\lib\jfoenix.jar
 
 Link al sito: [JFoenix]
-Tutto grazie a [Pozzo]
 
-Scanferla Giovanni 20\11\2016 -- il ritardo Ã¨ causato da dei miei problemi non ancora risolti<br>
-PerchÃ¨ spiego jesolo si tu Ã¨ marghera no, i problemi erano riguardanti la 01
+Scanferla Giovanni 20\11\2016 -- il ritardo è causato da dei problemi con la grafica, ora risolti
 
    [Guida AIML]: <https://www.tutorialspoint.com/aiml/>
    [JFoenix]: <http://jfoenix.com/>
-   [Pozzo]: <http://pozzoweb.altervista.org/chisono.php>
